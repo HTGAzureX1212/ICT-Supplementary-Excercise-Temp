@@ -7,6 +7,8 @@ begin
     randomize;
     randomInteger := random(100) + 1;
     
+    writeln('I have a secret number in my mind: ');
+    
     write('Enter your guess: ');
     readln(input);
     

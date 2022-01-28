@@ -1,13 +1,13 @@
 program Q102;
 var
-   operation: char;
-   continue: char;
+    operation: char;
+    choice: char;
    
-   randomLhs, randomRhs: integer;
-   correct: integer;
-   questions: integer;
+    randomLhs, randomRhs: integer;
+    correct: integer;
+    questions: integer;
    
-   ans: integer;
+    ans: integer;
    
 function Add(lhs, rhs: integer): boolean;
 begin
@@ -95,9 +95,9 @@ begin
         
         questions := questions + 1;
         
-        readln(continue);
+        readln(choice);
     end
-    until continue in ['N', 'n'];
+    until choice in ['N', 'n'];
     
     writeln('You have answered ', questions, 'questions. ', correct, ' right and ', questions - correct, ' wrong.');
     writeln('Score = ', (correct / questions) * 100:0:1, '%');

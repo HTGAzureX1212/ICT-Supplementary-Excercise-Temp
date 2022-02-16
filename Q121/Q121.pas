@@ -103,6 +103,7 @@ begin
            goto NoRealRoots;
         
         ComputeSolutions(coefficientXSquared, coefficientX, constantTerm, delta, x1, x2);
+        PrintSolutions(x1, x2, delta);
         
         NoRealRoots:
         
